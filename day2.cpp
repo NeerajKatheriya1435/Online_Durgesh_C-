@@ -28,7 +28,7 @@ int main()
   // char shyam[] = "Heelo ji";
   // char shaym1[4];
 
-  cout << shyam << endl;
+  // cout << shyam << endl;
   // cout << hello << endl;
 
   int apple = 45;

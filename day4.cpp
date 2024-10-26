@@ -12,6 +12,12 @@ void sum()
     return;
 }
 
+int sum1()
+{
+    int a = 90;
+    return a;
+}
+
 int main()
 {
     // code will execute from here
@@ -48,12 +54,7 @@ int main()
     cout << "The integer value of " << op1 << " is : " << (int)op1 << endl;
     cout << "The integer value of " << op1 << " is : " << (double)op1 << endl;
 
-    int sum()
-    {
-        int a = 90;
-        return a;
-    }
-    int hello = sum();
+    int hello = sum1();
 
     return 0;
 }
