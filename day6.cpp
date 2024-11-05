@@ -60,9 +60,37 @@ int main()
     int Hindi;
     int Total;
     float percent;
-    switch (rollNumber)
+    // switch (rollNumber)
+    // {
+    // case 101:
+    //     name1 = "Durgseh";
+    //     Address = "Gonda Uttar Pradesh";
+    //     Hindi = 79;
+    //     Maths = 71;
+    //     Physics = 68;
+    //     Total = (Hindi + Maths + Physics);
+    //     percent = ((float)Total * 100) / 300;
+    //     cout << "Name: " << name1 << endl;
+    //     cout << "Address: " << Address << endl;
+    //     cout << "Total Marks: " << Total << endl;
+    //     cout << "Total Percentage: " << percent << endl;
+    //     if (percent > 72)
+    //     {
+    //         cout << "You are wiiner";
+    //     }
+    //     else
+    //     {
+    //         cout << "You are not wiiner";
+    //     }
+    //     break;
+
+    // default:
+    //     break;
+    // }
+
+        // nested if else;
+    if (rollNumber == 101)
     {
-    case 101:
         name1 = "Durgseh";
         Address = "Gonda Uttar Pradesh";
         Hindi = 79;
@@ -82,13 +110,32 @@ int main()
         {
             cout << "You are not wiiner";
         }
-        break;
-
-    default:
-        break;
     }
-
-    // 3. loop structures
-
+    else if (rollNumber == 102)
+    {
+        name1 = "Durgseh1";
+        Address = "Gonda Uttar Pradesh1";
+        Hindi = 79;
+        Maths = 71;
+        Physics = 68;
+        Total = (Hindi + Maths + Physics);
+        percent = ((float)Total * 100) / 300;
+        cout << "Name: " << name1 << endl;
+        cout << "Address: " << Address << endl;
+        cout << "Total Marks: " << Total << endl;
+        cout << "Total Percentage: " << percent << endl;
+        if (percent > 72)
+        {
+            cout << "You are wiiner";
+        }
+        else
+        {
+            cout << "You are not wiiner";
+        }
+    }
+    else
+    {
+        cout << "Please enter valid rollNumber";
+    }
     return 0;
 }
