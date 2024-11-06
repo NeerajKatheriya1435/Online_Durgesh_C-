@@ -56,22 +56,6 @@ int main()
     // } while (i < 11);
 
     // while loop and do while tableName userdefined
-    // int i;
-    // cout << "enter te value of i" << endl;
-    // cin >> i;
-    for (int j = 0; j < 10; j++)
-    {
-        // if (j > 3)
-        // {
-        //     break;
-        // }
-        if (j == 5)
-        {
-            continue;
-        }
-        cout << j << endl;
-    }
-    cout << "Hello Braek" << endl;
 
     return 0;
 }
