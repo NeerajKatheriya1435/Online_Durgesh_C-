@@ -1,52 +1,59 @@
 #include <iostream>
 using namespace std;
 
-// inline int sum(int num1, int num2 = 8)
-// {
-//     return (num1 + num2);
-// }
+int sumofThreeNum(int a, int b = 7, int c = 8)
+{
+    return (a + b + c);
+}
 
-// inline float simpleInterest(int amt, int tm = 4, int rate = 8)
-// {
-//     float totalAmt = (amt * tm * rate) / 100;
-//     return totalAmt;
-// }
-
-int factorial(int num)
+int fact(int number)
 {
 
-    if (num < 1)
+    if (number < 2)
     {
         return 1;
     }
-    return num * factorial(num - 1);
+
+    return number * fact(number - 1);
+}
+
+int fib(int number2)
+{
+
+    if (number2 <= 2)
+    {
+        return 1;
+    }
+    return fib(number2 - 2) + fib(number2 - 1);
 }
 
 int main()
 {
+    // int num1, num2, num3;
+    // cout << "Enter first num" << endl;
+    // cin >> num1;
+    // cout << "Enter second num" << endl;
+    // cin >> num2;
+    // cout << "Enter third num" << endl;
+    // cin >> num3;
 
-    // sum function
-    // int number1, number2;
-    // cout << "Enter first number: " << endl;
+    // cout << "The sum of Three Num is: " << sumofThreeNum(num1, num2, num3) << endl;
+
+    // int number1;
+    // cout << "Enter the number you want factorial" << endl;
     // cin >> number1;
-    // cout << "Enter second number: " << endl;
-    // cin >> number2;
+    // cout << "Factorial of " << number1 << " is " << fact(number1);
 
-    // int sumofTwonum = sum(number1, number2);
-    // int sumofTwonum = sum(number1, number2);
+    for (int i = 1; i < 11; i++)
+    {
+        // int number2;
+        // cout << "Enter the number you want factorial" << endl;
+        // cin >> number2;
+        // cout << "Factorial of " << number2 << " is " << fib(number2);
+        cout << fib(i) << " ";
+    }
 
-    // cout << "The sum of two number is: " << sum(number1, number2) << endl;
-    // cout << "The sum of two number is: " << sum(number1) << endl;
+    // 1,1,2,3,5,8,13
 
-    // cout << "Total interest: " << simpleInterest(100, 8);
-
-    // factorial
-    int num;
-    cout << "Enter a number: " << endl;
-    cin >> num;
-
-    int fact = factorial(num);
-    cout << "The factorial of " << num << " is " << factorial(num) << endl;
-
-    return 0;
+        return 0;
 }

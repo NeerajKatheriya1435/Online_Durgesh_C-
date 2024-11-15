@@ -1,2 +1,1 @@
- endl;
-    // cout << "The sum of two number is: " << sum(number1) << endl;
+cout << fib(number2 - 2) + fib(number2 - 1) << endl;
