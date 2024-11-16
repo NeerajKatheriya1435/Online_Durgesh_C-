@@ -1,1 +1,1 @@
-cout << fib(number2 - 2) + fib(number2 - 1) << endl;
+
