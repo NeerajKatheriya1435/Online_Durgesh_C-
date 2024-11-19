@@ -1,46 +1,38 @@
 #include <iostream>
 using namespace std;
 
-class Animal
+class Empolyee
 {
 private:
-    int num1, num2, num3; // data members
+    int a, b, c;
 
 public:
-    int num4, num5, num6; // data members
-    int average(int number1, int number2, int number3);
-
-    void givesData()
+    int num1, num2;
+    void setData(int number1, int number2, int number3);
+    void getData(void)
     {
+        cout << "The value of a is: " << a << endl;
+        cout << "The value of b is: " << b << endl;
+        cout << "The value of c is: " << c << endl;
         cout << "The value of num1 is: " << num1 << endl;
-        cout << "The value of num1 is: " << num2 << endl;
-        cout << "The value of num1 is: " << num3 << endl;
-        cout << "The value of num1 is: " << num4 << endl;
-        cout << "The value of num1 is: " << num5 << endl;
-        cout << "The value of num1 is: " << num6 << endl;
-
-        cout << "The average of three num: " << average(num1, num2, num3) << endl;
+        cout << "The value of num2 is: " << num2 << endl;
     }
 };
 
-int Animal::average(int number1, int number2, int number3)
+void Empolyee::setData(int number1, int number2, int number3)
 {
-    num1 = number1;
-    num2 = number2;
-    num3 = number3;
-    return (number1 + number2 + number3) / 3;
-}
+    a = number1;
+    b = number2;
+    c = number3;
+};
 
 int main()
 {
-
-    Animal dog;
-    dog.num4 = 67;
-    dog.num5 = 7;
-    dog.num6 = 897;
-
-    dog.average(1, 6, 8);
-    dog.givesData();
-
+    Empolyee emp1;
+    emp1.num1 = 67;
+    emp1.num2 = 56;
+    // emp1.a = 90;
+    emp1.setData(45, 78, 23);
+    emp1.getData();
     return 0;
 }

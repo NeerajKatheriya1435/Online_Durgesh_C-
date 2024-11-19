@@ -7,7 +7,7 @@ using namespace std;
 //     string stdName;  8
 //     int rollNumber;  4
 //     float marks;     4
-// } std123;
+// } std123;  -->sturures are already typedefed
 
 // union data types
 
