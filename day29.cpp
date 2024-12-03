@@ -76,7 +76,6 @@ public:
 
 int main()
 {
-
     Result obj1;
     obj1.getResult();
     return 0;
